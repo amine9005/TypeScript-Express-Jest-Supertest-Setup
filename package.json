@@ -1,0 +1,20 @@
+{
+  "name": "express-typescript-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server.ts",
+  "scripts": {
+    "test": "jest --detectOpenHandles",
+    "dev": "nodemon ./src/server.ts",
+    "start": "node ./dist/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+   
+  },
+  "dependencies": {
+   
+  }
+}
