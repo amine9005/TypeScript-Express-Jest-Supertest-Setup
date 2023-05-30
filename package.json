@@ -5,8 +5,10 @@
   "main": "./src/server.ts",
   "scripts": {
     "test": "jest --detectOpenHandles",
-    "watch_build": "tsc -w",
+    "empty_dist": "rimraf dist",
+    "watch_build": "npx tsc -w",
     "run_nodemon": "nodemon ./dist/server.js",
+    "over_write":"npx tsc",
     "build": "npx tsc",
     "start": "node ./dist/server.js",
     "dev": "concurrently --kill-others \"npm run watch_build\" \"npm run run_nodemon\""
