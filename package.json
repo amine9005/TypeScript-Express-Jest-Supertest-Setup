@@ -5,8 +5,11 @@
   "main": "./src/server.ts",
   "scripts": {
     "test": "jest --detectOpenHandles",
-    "dev": "nodemon ./src/server.ts",
-    "start": "node ./dist/server.ts"
+    "watch_build": "tsc -w",
+    "run_nodemon": "nodemon ./dist/server.js",
+    "build": "npx tsc",
+    "start": "node ./dist/server.js",
+    "dev": "concurrently --kill-others \"npm run watch_build\" \"npm run run_nodemon\""
   },
   "keywords": [],
   "author": "",
