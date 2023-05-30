@@ -8,7 +8,7 @@ const app:Application = express();
 app.use(express.json())
 app.use(cors(corsOptions))
 
-app.use("/api/v1/loan_manager", router)
+app.use("/api/v1/app_name", router)
 
 app.use("*",(req,res,next)=>{
     res.status(404).json({
