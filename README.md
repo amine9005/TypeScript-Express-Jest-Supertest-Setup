@@ -1,6 +1,6 @@
-npm install -D typescript  nodemon jest ts-jest ts-node supertest @types/jest @types/node @types/supertest @types/cors   @types/express concurrently
+npm install -D typescript  nodemon jest ts-jest ts-node supertest @types/jest @types/node @types/supertest @types/cors   @types/express concurrently rimraf
 
-npm install cors express rimraf
+npm install cors express 
 
 check src/config/allowedOrigins and add your own
 
